@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="card">
+
+        <h1 class="title">Weather App</h1>
+
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter city...">
+
+            <button onclick="getWeather()">Search</button>
+            
+        </div>
+
+        <!-- Loading Animation -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- Weather Result -->
+        <div id="weatherResult" class="weather hidden">
+            <div id="liveTime" style="margin-top:8px;font-size:14px;color:#ccc;"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
